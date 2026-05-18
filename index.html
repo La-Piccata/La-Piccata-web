@@ -111,10 +111,10 @@
       transition: transform 0.4s, box-shadow 0.4s;
     }
     .hero-photo:hover { transform: scale(1.03) rotate(0deg) !important; box-shadow: 0 28px 60px rgba(0,0,0,0.25); }
-    .hero-photo img { width: 100%; height: auto; display: block; }
-    .hero-photo:nth-child(1) { width: auto; height: auto; max-width: 210px; top: 20px; left: 20px; transform: rotate(-6deg); z-index: 3; }
-    .hero-photo:nth-child(2) { width: auto; height: auto; max-width: 230px; top: 80px; left: 150px; transform: rotate(4deg); z-index: 4; }
-    .hero-photo:nth-child(3) { width: auto; height: auto; max-width: 200px; top: 260px; left: 60px; transform: rotate(-3deg); z-index: 2; }
+    .hero-photo img { width: 100%; height: 100%; object-fit: contain; display: block; background: #FAF6F0; }
+    .hero-photo:nth-child(1) { width: 210px; height: 210px; top: 20px; left: 20px; transform: rotate(-6deg); z-index: 3; }
+    .hero-photo:nth-child(2) { width: 230px; height: 230px; top: 80px; left: 150px; transform: rotate(4deg); z-index: 4; }
+    .hero-photo:nth-child(3) { width: 200px; height: 200px; top: 260px; left: 60px; transform: rotate(-3deg); z-index: 2; }
 
     .hero-text { padding-left: 2rem; }
     .hero-badge {
@@ -618,7 +618,7 @@
           <p>Prueba la <strong>Empanada de Pino Ají</strong>: masa crujiente, aceituna sin cuesco y un exquisito toque ahumado y levemente picante. Tan sabrosa que simplemente no repite.</p>
         </div>
         <div class="carta-photo">
-          <img src="https://images.unsplash.com/photo-1625944525533-473f1a3d54e7?w=600&q=85" alt="Empanada de pino ají" loading="lazy" />
+          <img src="images/pino1.jpg" alt="Empanada de pino ají" loading="lazy" />
         </div>
       </div>
 
@@ -630,146 +630,232 @@
           <div class="carta-page active">
             <div class="carta-page-title">🫓 Empanadas</div>
             <div class="menu-category">
-              <h4>Empanadas al Horno</h4>
+              <h4>Empanadas de Pino</h4>
               <div class="menu-item">
-                <div><div class="menu-item-name">Pino Clásico</div><div class="menu-item-desc">Carne, cebolla, aceituna, huevo duro</div></div>
-                <div class="menu-item-price">$2.800</div>
+                <div><div class="menu-item-name">Pino</div></div>
+                <div class="menu-item-price">$3.200</div>
               </div>
               <div class="menu-item">
-                <div><div class="menu-item-name">Pino Ají</div><div class="menu-item-desc">Receta especial con toque ahumado y picante</div></div>
-                <div class="menu-item-price">$3.100</div>
+                <div><div class="menu-item-name">Pino Ají</div></div>
+                <div class="menu-item-price">$3.200</div>
               </div>
               <div class="menu-item">
-                <div><div class="menu-item-name">Queso</div><div class="menu-item-desc">Queso derretido, masa dorada y crujiente</div></div>
-                <div class="menu-item-price">$2.500</div>
+                <div><div class="menu-item-name">Not Pino</div><div class="menu-item-desc">Delicioso pino a base de carne de soya</div></div>
+                <div class="menu-item-price">$3.200</div>
               </div>
               <div class="menu-item">
-                <div><div class="menu-item-name">Queso y Carne</div><div class="menu-item-desc">La combinación perfecta</div></div>
-                <div class="menu-item-price">$2.900</div>
+                <div><div class="menu-item-name">Pino Pollo</div></div>
+                <div class="menu-item-price">$3.200</div>
               </div>
               <div class="menu-item">
-                <div><div class="menu-item-name">Camarón Queso</div><div class="menu-item-desc">Camarones al ajillo con queso mantecoso</div></div>
+                <div><div class="menu-item-name">Pino Marisco</div></div>
+                <div class="menu-item-price">$3.200</div>
+              </div>
+            </div>
+            <div class="menu-category">
+              <h4>Empanadas de Queso</h4>
+              <div class="menu-item">
+                <div><div class="menu-item-name">Queso</div></div>
+                <div class="menu-item-price">$3.200</div>
+              </div>
+              <div class="menu-item">
+                <div><div class="menu-item-name">Queso Aceituna</div></div>
+                <div class="menu-item-price">$3.200</div>
+              </div>
+              <div class="menu-item">
+                <div><div class="menu-item-name">Queso Camarón</div></div>
                 <div class="menu-item-price">$3.800</div>
               </div>
               <div class="menu-item">
-                <div><div class="menu-item-name">Espinaca y Queso</div><div class="menu-item-desc">Opción vegetariana cremosa</div></div>
-                <div class="menu-item-price">$2.600</div>
-              </div>
-            </div>
-            <div class="menu-category">
-              <h4>Empanadas Fritas</h4>
-              <div class="menu-item">
-                <div><div class="menu-item-name">Napolitana</div><div class="menu-item-desc">Jamón, queso y tomate frito</div></div>
-                <div class="menu-item-price">$2.700</div>
+                <div><div class="menu-item-name">Queso Carne</div></div>
+                <div class="menu-item-price">$3.600</div>
               </div>
               <div class="menu-item">
-                <div><div class="menu-item-name">Pino Frita</div><div class="menu-item-desc">Crocante por fuera, jugosa por dentro</div></div>
-                <div class="menu-item-price">$2.800</div>
+                <div><div class="menu-item-name">Queso Champiñón</div></div>
+                <div class="menu-item-price">$3.600</div>
+              </div>
+              <div class="menu-item">
+                <div><div class="menu-item-name">Queso Choclo</div></div>
+                <div class="menu-item-price">$3.200</div>
+              </div>
+              <div class="menu-item">
+                <div><div class="menu-item-name">Queso Jamón</div></div>
+                <div class="menu-item-price">$3.200</div>
               </div>
             </div>
           </div>
 
-          <!-- PÁGINA 2: Pasteles -->
+          <!-- PÁGINA 2: Empanadas especiales -->
           <div class="carta-page">
-            <div class="carta-page-title">🌽 Pasteles y Cazuelas</div>
+            <div class="carta-page-title">🫓 Empanadas Especiales</div>
             <div class="menu-category">
-              <h4>Pasteles</h4>
+              <h4>Variedades especiales</h4>
               <div class="menu-item">
-                <div><div class="menu-item-name">Pastel de Choclo</div><div class="menu-item-desc">Con pino, pollo, aceituna y huevo — tradición chilena</div></div>
-                <div class="menu-item-price">$6.500</div>
+                <div><div class="menu-item-name">Española</div><div class="menu-item-desc">Queso, aceitunas negras, pimentón rojo y longaniza de Chillán</div></div>
+                <div class="menu-item-price">$3.600</div>
               </div>
               <div class="menu-item">
-                <div><div class="menu-item-name">Pastel de Papa</div><div class="menu-item-desc">Puré gratinado con carne al jugo</div></div>
-                <div class="menu-item-price">$6.200</div>
+                <div><div class="menu-item-name">Napolitana</div><div class="menu-item-desc">Queso, aceitunas negras, tomate, jamón y orégano</div></div>
+                <div class="menu-item-price">$3.200</div>
               </div>
               <div class="menu-item">
-                <div><div class="menu-item-name">Torta Pascualina</div><div class="menu-item-desc">Espinaca, acelga y huevo en hojaldre</div></div>
-                <div class="menu-item-price">$5.800</div>
+                <div><div class="menu-item-name">Siciliana</div><div class="menu-item-desc">Queso, tomate, albahaca fresca y un toque de aceite de oliva</div></div>
+                <div class="menu-item-price">$3.200</div>
+              </div>
+              <div class="menu-item">
+                <div><div class="menu-item-name">Vegetariana</div><div class="menu-item-desc">Suave guiso de espinaca con crema, choclo y pimentón rojo</div></div>
+                <div class="menu-item-price">$3.200</div>
               </div>
             </div>
             <div class="menu-category">
-              <h4>Cazuelas y Sopas</h4>
+              <h4>Desayunos</h4>
               <div class="menu-item">
-                <div><div class="menu-item-name">Cazuela de Vacuno</div><div class="menu-item-desc">Con choclo, papa, arroz y verduras</div></div>
-                <div class="menu-item-price">$7.500</div>
+                <div><div class="menu-item-name">Café &amp; Dobladita con queso</div></div>
+                <div class="menu-item-price">$5.900</div>
               </div>
               <div class="menu-item">
-                <div><div class="menu-item-name">Chupe de Mariscos</div><div class="menu-item-desc">Camarones, machas y choritos en salsa cremosa</div></div>
+                <div><div class="menu-item-name">Café &amp; Dobladita jamón queso</div></div>
+                <div class="menu-item-price">$5.900</div>
+              </div>
+              <div class="menu-item">
+                <div><div class="menu-item-name">Café &amp; Dobladita doble queso</div></div>
+                <div class="menu-item-price">$5.900</div>
+              </div>
+              <div class="menu-item">
+                <div><div class="menu-item-name">Café &amp; Dobladita palta</div></div>
+                <div class="menu-item-price">$5.900</div>
+              </div>
+              <div class="menu-item">
+                <div><div class="menu-item-name">Café &amp; Paila con huevo</div></div>
+                <div class="menu-item-price">$5.900</div>
+              </div>
+              <div class="menu-item">
+                <div><div class="menu-item-name">Brunch</div><div class="menu-item-desc">Tostada francesa, hogaza masa madre con palta, café y shot de naranja</div></div>
+                <div class="menu-item-price">$11.990</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PÁGINA 3: Almuerzos -->
+          <div class="carta-page">
+            <div class="carta-page-title">🍽️ Almuerzos</div>
+            <div class="menu-category">
+              <h4>Menú del Día (Mar–Vie)</h4>
+              <div class="menu-item">
+                <div><div class="menu-item-name">Pan + Entrada + Fondo</div><div class="menu-item-desc">Ensalada surtida o consomé</div></div>
+                <div class="menu-item-price">$8.400</div>
+              </div>
+            </div>
+            <div class="menu-category">
+              <h4>Especialidades del Chef</h4>
+              <div class="menu-item">
+                <div><div class="menu-item-name">Lasaña Boloñesa</div></div>
+                <div class="menu-item-price">$8.400</div>
+              </div>
+              <div class="menu-item">
+                <div><div class="menu-item-name">Lasaña Vegetariana</div></div>
+                <div class="menu-item-price">$8.400</div>
+              </div>
+              <div class="menu-item">
+                <div><div class="menu-item-name">Lasaña de Salmón</div></div>
+                <div class="menu-item-price">$9.400</div>
+              </div>
+              <div class="menu-item">
+                <div><div class="menu-item-name">Chupe de Marisco</div></div>
+                <div class="menu-item-price">$8.400</div>
+              </div>
+              <div class="menu-item">
+                <div><div class="menu-item-name">Pastel de Choclo</div></div>
+                <div class="menu-item-price">$8.400</div>
+              </div>
+              <div class="menu-item">
+                <div><div class="menu-item-name">Pascualina de Pollo</div></div>
+                <div class="menu-item-price">$8.400</div>
+              </div>
+              <div class="menu-item">
+                <div><div class="menu-item-name">Pascualina Vegetariana</div></div>
+                <div class="menu-item-price">$8.400</div>
+              </div>
+            </div>
+            <div class="menu-category">
+              <h4>Extras</h4>
+              <div class="menu-item">
+                <div><div class="menu-item-name">Bistec</div></div>
+                <div class="menu-item-price">$10.500</div>
+              </div>
+              <div class="menu-item">
+                <div><div class="menu-item-name">Escalopa / Kaiser</div></div>
+                <div class="menu-item-price">$10.500</div>
+              </div>
+              <div class="menu-item">
+                <div><div class="menu-item-name">Pollo Piccata / Grillado / Apanado</div></div>
+                <div class="menu-item-price">desde $8.900</div>
+              </div>
+              <div class="menu-item">
+                <div><div class="menu-item-name">Arrollado Huaso</div></div>
+                <div class="menu-item-price">$9.900</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PÁGINA 4: Ensaladas y Cafetería -->
+          <div class="carta-page">
+            <div class="carta-page-title">🥗 Ensaladas &amp; Cafetería</div>
+            <div class="menu-category">
+              <h4>Ensaladas / Entradas</h4>
+              <div class="menu-item">
+                <div><div class="menu-item-name">Ceviche</div><div class="menu-item-desc">Solo los sábados</div></div>
                 <div class="menu-item-price">$8.900</div>
               </div>
-            </div>
-          </div>
-
-          <!-- PÁGINA 3: Lasañas y más -->
-          <div class="carta-page">
-            <div class="carta-page-title">🍝 Lasañas y Pastas</div>
-            <div class="menu-category">
-              <h4>Lasañas</h4>
               <div class="menu-item">
-                <div><div class="menu-item-name">Lasaña Boloñesa</div><div class="menu-item-desc">Carne molida, bechamel y queso gratinado</div></div>
-                <div class="menu-item-price">$7.200</div>
+                <div><div class="menu-item-name">Ensalada César / Griega</div></div>
+                <div class="menu-item-price">$9.500</div>
               </div>
               <div class="menu-item">
-                <div><div class="menu-item-name">Lasaña Vegetal</div><div class="menu-item-desc">Champiñones, espinaca, ricotta y tomate</div></div>
-                <div class="menu-item-price">$6.800</div>
+                <div><div class="menu-item-name">Ensalada Mediterránea / Waldorf</div></div>
+                <div class="menu-item-price">$9.900</div>
               </div>
               <div class="menu-item">
-                <div><div class="menu-item-name">Lasaña de Pollo</div><div class="menu-item-desc">Pollo al curry suave con bechamel especial</div></div>
-                <div class="menu-item-price">$7.000</div>
-              </div>
-              <div class="menu-item">
-                <div><div class="menu-item-name">Lasaña Mar y Tierra</div><div class="menu-item-desc">Carne y mariscos en salsa marinera</div></div>
-                <div class="menu-item-price">$8.200</div>
+                <div><div class="menu-item-name">Palta Reina</div><div class="menu-item-desc">Pollo, del mar, pasta huevo, atún o mixta</div></div>
+                <div class="menu-item-price">$9.900</div>
               </div>
             </div>
             <div class="menu-category">
-              <h4>Ensaladas</h4>
+              <h4>Cafetería</h4>
               <div class="menu-item">
-                <div><div class="menu-item-name">Ensalada Picatta</div><div class="menu-item-desc">Mix de hojas, tomate, palta, nueces y vinagreta de mostaza</div></div>
-                <div class="menu-item-price">$5.500</div>
+                <div><div class="menu-item-name">Espresso / Cortado / Lungo</div></div>
+                <div class="menu-item-price">desde $2.800</div>
               </div>
               <div class="menu-item">
-                <div><div class="menu-item-name">Ensalada César</div><div class="menu-item-desc">Romana, crotones, parmesano y aderezo casero</div></div>
-                <div class="menu-item-price">$5.200</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- PÁGINA 4: Bebidas -->
-          <div class="carta-page">
-            <div class="carta-page-title">☕ Cafetería y Bebidas</div>
-            <div class="menu-category">
-              <h4>Cafés y Tisanas</h4>
-              <div class="menu-item">
-                <div><div class="menu-item-name">Café Espresso</div><div class="menu-item-desc">Grano premium tostado artesanal</div></div>
-                <div class="menu-item-price">$1.800</div>
+                <div><div class="menu-item-name">Americano / Capuccino / Latte</div></div>
+                <div class="menu-item-price">desde $3.000</div>
               </div>
               <div class="menu-item">
-                <div><div class="menu-item-name">Café con Leche</div><div class="menu-item-desc">Espresso doble con leche vaporizada</div></div>
-                <div class="menu-item-price">$2.200</div>
+                <div><div class="menu-item-name">Mokaccino / Chocolate caliente</div></div>
+                <div class="menu-item-price">desde $3.300</div>
               </div>
               <div class="menu-item">
-                <div><div class="menu-item-name">Cappuccino</div><div class="menu-item-desc">Con espuma cremosa y canela</div></div>
-                <div class="menu-item-price">$2.400</div>
-              </div>
-              <div class="menu-item">
-                <div><div class="menu-item-name">Té de la casa</div><div class="menu-item-desc">Selección de hierbas e infusiones</div></div>
-                <div class="menu-item-price">$1.600</div>
+                <div><div class="menu-item-name">Té o Infusión</div></div>
+                <div class="menu-item-price">$3.000</div>
               </div>
             </div>
             <div class="menu-category">
-              <h4>Jugos y Refrescos</h4>
+              <h4>Pastelería / Postres</h4>
               <div class="menu-item">
-                <div><div class="menu-item-name">Jugo Natural</div><div class="menu-item-desc">Naranja, manzana o piña — exprimido al momento</div></div>
-                <div class="menu-item-price">$2.600</div>
+                <div><div class="menu-item-name">Pie de limón / Maracuyá</div></div>
+                <div class="menu-item-price">$3.500</div>
               </div>
               <div class="menu-item">
-                <div><div class="menu-item-name">Agua Mineral</div><div class="menu-item-desc">Con o sin gas</div></div>
-                <div class="menu-item-price">$1.200</div>
+                <div><div class="menu-item-name">Kuchen de manzana / Nuez</div></div>
+                <div class="menu-item-price">$3.800</div>
               </div>
               <div class="menu-item">
-                <div><div class="menu-item-name">Bebidas</div><div class="menu-item-desc">Coca-Cola, Sprite, Fanta</div></div>
-                <div class="menu-item-price">$1.500</div>
+                <div><div class="menu-item-name">Cheesecake / Torta cuatro leches</div></div>
+                <div class="menu-item-price">$4.000</div>
+              </div>
+              <div class="menu-item">
+                <div><div class="menu-item-name">Postre Piccata</div><div class="menu-item-desc">Merengue, manjar, leche condensada y manzana rallada</div></div>
+                <div class="menu-item-price">$3.500</div>
               </div>
             </div>
           </div>
@@ -789,7 +875,7 @@
         </div>
         <div class="carta-tip">
           <h4>🌽 ¿Sin empanadas?</h4>
-          <p>¡Tranqui! Tenemos almuerzos de todo tipo: pasteles de choclo, variedades de lasañas, tortas pascualinas, chupe de marisco, ensaladas y ¡muchas cosas más!</p>
+          <p>¡Tenemos mucho más! Lasañas, pastel de choclo, pascualinas, chupe de marisco, ensaladas, postres y una completa cafetería. ¡Algo para cada gusto!</p>
         </div>
       </div>
     </div>
